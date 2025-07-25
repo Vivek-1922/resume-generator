@@ -1,0 +1,21 @@
+<!-- resume.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Resume</title>
+</head>
+<body>
+  <h1>My Resume</h1>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.write(`<p><strong>Name:</strong> ${params.get("name")}</p>`);
+    document.write(`<p><strong>Email:</strong> ${params.get("email")}</p>`);
+    document.write(`<p><strong>Phone:</strong> ${params.get("phone")}</p>`);
+    document.write(`<p><strong>Education:</strong><br> ${params.get("education")}</p>`);
+    document.write(`<p><strong>Skills:</strong><br> ${params.get("skills")}</p>`);
+    document.write(`<p><strong>Experience:</strong><br> ${params.get("experience")}</p>`);
+  </script>
+</body>
+</html>
